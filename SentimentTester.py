@@ -12,36 +12,30 @@ stopwords = ["i", "me", "my", "myself", "we", "our", "ours", "ourselves", "you",
 df = pd.read_csv('training_data.csv')
 df = df[['Text','Sentiment']]
 
-df['Text'] = df['Text'].map(lambda review: remove_stopwords(review))
 
-print(df.head())
+mini_df = df[:20000]
+
+X = np.array(mini_df['Text'])
+y = np.array(mini_df['Sentiment'])
+
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2, random_state=42)
+
+## Tfidf works better than count vectorizer
+vectorizer = TfidfVectorizer(stop_words=None)
+X_train_vectors = vectorizer.fit_transform(X_train)
+X_test_vectors = vectorizer.transform(X_test)
+
+clf = MLPClassifier(solver='adam', activation='logistic', hidden_layer_sizes=(64,64))
+clf.fit(X_train_vectors, y_train)
 
 
-
-
-print(df.head())
-
-# mini_df = df[:5000]
-#
-# X = np.array(mini_df['Text'])
-# y = np.array(mini_df['Sentiment'])
-#
-# X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2, random_state=42)
-#
-# ## Tfidf works better than count vectorizer
-# vectorizer = TfidfVectorizer()
-# X_train_vectors = vectorizer.fit_transform(X_train)
-# X_test_vectors = vectorizer.transform(X_test)
-#
-# clf = MLPClassifier(solver='adam', activation='logistic', hidden_layer_sizes=(64,64))
-# clf.fit(X_train_vectors, y_train)
-#
-#
-# ## Around 68% accuracy using 8000 of the 1M training examples
-# print(f1_score(y_test, clf.predict(X_test_vectors), average=None, labels=[0,1]))
+## Around 68% accuracy using 8000 of the 1M training examples
+print(f1_score(y_test, clf.predict(X_test_vectors), average=None, labels=[0,1]))
 
 ## Without @ remove [0.6969377  0.72744539] with 5000
+
 ## [0.67069486 0.67527309] on 5000 with @ remove
+## [0.67992048 0.67605634] on 5000 with stopwords
 
 
 
