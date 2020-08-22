@@ -11,6 +11,3 @@ print(df.head())
 new_df = df[:1000]
 print(new_df.size)
 
-X = new_df['Text']
-y = new_df['Sentiment']
-
