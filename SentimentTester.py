@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer,CountVectorizer
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import f1_score
@@ -11,7 +11,7 @@ df = df[['Text','Sentiment']]
 
 print(df['Sentiment'].value_counts())
 
-mini_df = df[:8000]
+mini_df = df[:10000]
 
 X = np.array(mini_df['Text'])
 y = np.array(mini_df['Sentiment'])
@@ -19,7 +19,8 @@ y = np.array(mini_df['Sentiment'])
 X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2, random_state=42)
 
 
-vectorizer = CountVectorizer()
+## Tfidf works better than count vectorizer
+vectorizer = TfidfVectorizer()
 X_train_vectors = vectorizer.fit_transform(X_train)
 X_test_vectors = vectorizer.transform(X_test)
 
