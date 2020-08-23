@@ -19,3 +19,4 @@ with open('JudgingResults.csv', 'w') as file:
         writer.writerow([str(df.iloc[i]['ID']), str(df.iloc[i]['User']), str(df.iloc[i]['Text']),
                          str(df.iloc[i]['Sentiment'])])
 
+## Meaningless comment
