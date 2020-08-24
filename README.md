@@ -15,18 +15,16 @@ Explain how to run the automated tests for this system
 Removed punctuation utilizing regex string query function\
 Used a Tfidfvectorizor to further clean
 ### Optimization
-<ul>
-<li>Logistic regression model</li>
-<li>Optimized the parameters of the linear regression using a grid search</li>
-<li>Optimizing the vectorizor by trying different techniques to clean data, such as using lemmatization and stopwords</li>
-<li>Obtained an F1 score of [0.82,0.82]</li> 
-</ul>
+Logistic regression model\
+Optimized the parameters of the linear regression using a grid search\
+Optimizing the vectorizor by trying different techniques to clean data, such as using lemmatization and stopwords\
+Obtained an F1 score of [0.82,0.82]
 ### Version History
 Version 1.0: This is the first and last release of the Sentiment Analyzer
 ### Authors
-David Chen\
-George Liu\
-David Wang\
+David Chen
+George Liu
+David Wang
 Michael Yang
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details
