@@ -4,10 +4,10 @@ Submission for the 2020 Ignition Hacks Sigma Division. We created an AI model th
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Prerequisites
 To run on a local device, you will need to download the following:\
-Pandas\
-Numpy\
-Sklearn\
-NLTK
+-Pandas\
+-Numpy\
+-Sklearn\
+-NLTK\
 Alternatively, you may run on a cloud-hosted development environment.
 ### Running the program
 1) Running the “submission_training.ipynb” file will save the logistic regression model under the file name “SentimentNewton_Log.pkl” and the TfidfVectorizer under the file name “Vectorizer.pkl “.
