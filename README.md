@@ -3,7 +3,7 @@ Submission for the 2020 Ignition Hacks Sigma Division. We created an AI model th
 ### Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Prerequisites
-To run on a local device, you will need to download the following: 
+To run on a local device, you will need to download the following:\
 Pandas\
 Numpy\
 Sklearn\
