@@ -10,7 +10,7 @@ To run on a local device, you will need to download the following:
 - NLTK
 Alternatively, you may run on a cloud-hosted development environment.
 ### Running the program
-1. Running the “submission_training.ipynb” file will save the logistic regression model under the file name “SentimentNewton_Log.pkl” and the TfidfVectorizer under the file name “Vectorizer.pkl “.
+1. Running the “submission_training.ipynb” file will save the logistic regression model under the file name “SentimentNewton_Log.pkl” and the TfidfVectorizer under the file name “Vectorizer.pkl“.
 2. From there, running “submission_createcsv.ipynd” will use the regression model to predict the sentiments of the judgment dataset 
 ### Data Cleaning
 - Removed punctuation utilizing regex string query function
