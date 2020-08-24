@@ -7,7 +7,7 @@ To run on a local device, you will need to download the following:
 - Pandas
 - Numpy
 - Sklearn
-- NLTK\
+- NLTK
 
 Alternatively, you may run on a cloud-hosted development environment.
 ## Running the program
