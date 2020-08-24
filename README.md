@@ -25,7 +25,7 @@ Version 1.0: This is the first and last release of the Sentiment Analyzer
 David Chen\
 George Liu\
 David Wang\
-Michael Yang\
+Michael Yang
 ### License
 This project is licensed under the MIT License - see the LICENSE.md file for details
 ### Acknowledgments
