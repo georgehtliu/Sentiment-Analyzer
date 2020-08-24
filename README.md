@@ -18,7 +18,7 @@ Used a Tfidfvectorizor to further clean
 Logistic regression model\
 Optimized the parameters of the linear regression using a grid search\
 Optimizing the vectorizor by trying different techniques to clean data, such as using lemmatization and stopwords\
-Obtained an F1 score of [0.82,0.82]\
+Obtained an F1 score of [0.82,0.82]
 ### Version History
 Version 1.0: This is the first and last release of the Sentiment Analyzer
 ### Authors
