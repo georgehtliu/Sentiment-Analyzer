@@ -4,16 +4,16 @@ Submission for the 2020 Ignition Hacks Sigma Division. We created an AI model th
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Prerequisites
 To run on a local device, you will need to download the following: 
-Pandas
-Numpy
-Sklearn
+Pandas\
+Numpy\
+Sklearn\
 NLTK
 Alternatively, you may run on a cloud-hosted development environment.
 ### Running the program
 Explain how to run the automated tests for this system
 ### Data Cleaning
 Removed punctuation utilizing regex string query function\
-Used a Tfidfvectorizor to further clean\
+Used a Tfidfvectorizor to further clean
 ### Optimization
 Logistic regression model\
 Optimized the parameters of the linear regression using a grid search\
