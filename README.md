@@ -1,5 +1,5 @@
 # Sentiment Analyzer
-Submission for the 2020 Ignition Hacks Sigma Division. We created an AI model that predicts the sentiment of a given sentence, classifying it as positive (represented with a 1) or negative (represented with a 0). The code was written in Python using the scikit-learn machine learning library and the Natural Language Toolkit.
+Submission for the 2020 Ignition Hacks Sigma Division that won Second Place for accuracy. We created an AI model that predicts the sentiment of a given sentence, classifying it as positive (represented with a 1) or negative (represented with a 0). The code was written in Python using the scikit-learn machine learning library and the Natural Language Toolkit.
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 ### Prerequisites
